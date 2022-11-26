@@ -1,0 +1,84 @@
+body {
+  background-image: url(img/tk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 11em;
+  color: white;
+  background-color: #d8da3d;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body h1 {
+  font-family: Helvetica,sans-serif;
+}
+
+body ul.navbar {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black;
+}
+
+body ul.navbar a {
+  text-decoration: none;
+}
+
+body ul.navbar a:link {
+  color: blue;
+}
+
+body ul.navbar a:visited {
+  color: purple;
+}
+
+body address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted;
+}
+
+body video {
+  max-width: 500px;
+  margin: 20px;
+}
+
+body .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .video div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body table {
+  width: 500px;
+  margin: 10px;
+}
+
+body table th {
+  border: solid 1px #000;
+  background-color: #ddddaa;
+}
+
+body table td {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
