@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: url(img/tk.jpg);
   background-repeat: no-repeat;
@@ -80,5 +81,199 @@ body table th {
 
 body table td {
   padding-left: 20px;
+}
+
+body .form-wrap {
+  width: 640px;
+  background: #ffd500;
+  /* Цвет фона */
+  border-radius: 20px;
+  border: 4px double black;
+  /* Параметры границы */
+}
+
+body .profile {
+  width: 240px;
+  float: left;
+  text-align: center;
+  padding: 30px;
+}
+
+body form {
+  background: white;
+  /* Цвет фона */
+  float: right;
+  width: 210px;
+  padding: 60px;
+  /* Поля вокруг текста */
+  border-radius: 0 20px 20px 0;
+  color: #7b7b7b;
+}
+
+body .form-wrap:after, body form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+body h1 {
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 50px;
+}
+
+body h1:after {
+  content: "⁕";
+  font-size: 40px;
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body h2 {
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 150px;
+}
+
+body label, body span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+body input {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+
+body input[type="text"]:focus, body input[type="email"]:focus {
+  -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+body .radio label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  line-height: 40px;
+}
+
+body .radio input {
+  position: absolute;
+  opacity: 0;
+}
+
+body .radio-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  text-align: center;
+}
+
+body .male:before {
+  content: "⛌";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+
+body .female:before {
+  content: "✓";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+
+body .radio label:hover input ~ .radio-control,
+body .radiol input:focus ~ .radio-control {
+  -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+body .radio input:checked ~ .radio-control {
+  color: red;
+}
+
+body select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none;
+  /*убираем галочку в webkit-браузерах*/
+  -moz-appearance: none;
+  /*убираем галочку в Mozilla Firefox*/
+}
+
+body select::-ms-expand {
+  display: none;
+  /*убираем галочку в IE*/
+}
+
+body .select-arrow {
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  /*активизируем показ списка при нажатии на стрелку*/
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+
+body button {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: #60e6c5;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  body .form-wrap {
+    margin: 20px auto;
+    max-width: 550px;
+    width: 100%;
+  }
+  body .profile, body form {
+    float: none;
+    width: 100%;
+  }
+  body h1 {
+    margin-top: auto;
+    padding-bottom: 50px;
+  }
+  body form {
+    border-radius: 0 0 20px 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
