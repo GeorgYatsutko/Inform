@@ -97,7 +97,7 @@ h1 {
   position: relative;
   margin-top: 50px;
 }
-h1:after {
+form h1:after {
   content: "⁕";
   font-size: 40px;
   font-family: FontAwesome;
